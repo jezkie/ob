@@ -1,0 +1,16 @@
+<table class="table table-stiped">
+  <thead>
+    <tr>
+      <th>Account Name</th>
+      <th>Account Number</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of accounts">
+      <td (click)="selectedAccount(item)">{{item.name}}</td>
+      <td>{{item.number}}</td>
+      <td>{{item.balance}}</td>
+    </tr>
+  </tbody>
+</table>
